@@ -1,0 +1,28 @@
+# AI Codebase Search Engine - Dependencies
+# All models run locally - no API keys required!
+
+# Core ML/Embedding Libraries
+# sentence-transformers provides easy access to all-MiniLM-L6-v2 (recommended)
+sentence-transformers>=2.2.0
+
+# HuggingFace ecosystem (used by sentence-transformers)
+transformers>=4.30.0
+tokenizers>=0.13.0
+
+# PyTorch (CPU version - no GPU needed for small models)
+# Install CPU-only version to save space:
+# pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0
+
+# Numerical computation
+numpy>=1.24.0
+
+# Progress bars
+tqdm>=4.65.0
+
+# Optional: for faster inference with ONNX
+# onnxruntime>=1.15.0
+
+# Development / Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
